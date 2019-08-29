@@ -5,3 +5,4 @@ RUN pip install selenium
 RUN npm install -g testcafe fs
 RUN mkdir /ui_test
 COPY tests/ /tests/
+CMD echo $TEST_USER

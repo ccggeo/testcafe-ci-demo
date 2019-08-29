@@ -25,8 +25,9 @@ node {
     }
 
     stage('Run Tests') {
-        docker.image('wqsttfuhinezwgscvibvxif/test-cafe:latest').inside {
-        sh '/usr/local/bin/testcafe "chrome:headless" tests/**/*'
+        docker.image('wqsttfuhinezwgscvibvxif/react-ui:latest').inside {
+        sh 'ls /'
+        sh 'echo $TEST_USER'
         }
 
     }
