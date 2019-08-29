@@ -26,7 +26,7 @@ node {
 
     stage('Run Tests') {
         docker.image('wqsttfuhinezwgscvibvxif/react-ui:latest').inside('-e ${env.USER_TEST}') {
-        sh 'echo $TEST_USER'
+        sh 'echo $USER_TEST'
         }
 
     }
