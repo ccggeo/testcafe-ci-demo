@@ -30,4 +30,10 @@ node {
         }
 
     }
+
+    stage ('Starting secondary job') {
+        build job: 'pipeline-b'
+    }
 }
+
+
